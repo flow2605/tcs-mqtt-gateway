@@ -1,0 +1,94 @@
+# ------------------------------------------------------------------------------
+# ESP-IDF Git Ignore
+# ------------------------------------------------------------------------------
+# Ignore build artifacts and generated files
+/build/
+sdkconfig.old
+sdkconfig.defaults
+sdkconfig.save
+sdkconfig.ci
+sdkconfig.release
+sdkconfig.debug
+
+# CMake and build system files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CMakeLists.txt.user
+*.cmake.api/
+*.ninja
+*.manifest
+build.ninja
+
+# Compiler and linker outputs
+*.elf
+*.bin
+*.map
+*.hex
+*.a
+*.o
+*.d
+*.obj
+*.log
+
+# Flash images and generated binaries
+*.bin
+*.srec
+*.map
+*.dump
+
+# Partition tables
+partitions*.bin
+partitions*.csv
+
+# Python virtual environment (if used)
+.venv/
+venv/
+env/
+env.bak/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode / CLion / Eclipse IDE settings
+.vscode/
+.idea/
+*.iml
+.cproject
+.project
+.settings/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# ESP-IDF Tools
+/dist/
+components/esptool_py/esptool/esptool.pyc
+components/bootloader/subproject/build/
+components/bootloader/subproject/CMakeFiles/
+components/bootloader/subproject/CMakeCache.txt
+components/bootloader/subproject/build.ninja
+
+# Generated documentation
+/doc/_build/
+*.html
+*.pdf
+
+# Temporary or backup files
+*~
+*.bak
+*.tmp
+*.swp
+
+# Secret credentials — never commit
+main/secrets.h
+*.key
+*.pkey
+
+# IDE metadata
+.metadata/
