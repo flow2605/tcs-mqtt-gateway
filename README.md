@@ -1,7 +1,5 @@
 # tcs-mqtt-gateway
 
-> **Disclaimer:** This is a personal DIY project. Use it at your own risk. The author takes no responsibility for any damage to your intercom system, your property, or anything else. Tapping into building intercom wiring may void warranties or violate tenancy agreements - check before you build.
-
 This project connects a **TCS intercom system** (tested with ISW3030) to **MQTT** using an **ESP32**.  
 TCS is a widely used German manufacturer of intercom systems in multi-apartment buildings. By integrating the system with MQTT, you can connect your doorbell to your smart-home setup.
 
@@ -73,7 +71,7 @@ The TCS bus runs at ~24 V, which the ESP32 cannot tolerate directly on its GPIO 
 
 The TX side uses an N-Mosfet for pulling the bus low.
 
-<img src="docs/images/schematic.jpg" width="600"/>
+<img src="docs/images/schematic.jpg" width="400"/>
 
 Assembled on a breadboard:
 
