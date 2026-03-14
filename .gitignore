@@ -92,3 +92,17 @@ main/secrets.h
 
 # IDE metadata
 .metadata/
+
+# Claude Code
+.claude/
+.clangd
+tool_set_config.json
+
+# ESP-IDF generated config
+sdkconfig
+sdkconfigdaa
+dependencies.lock
+
+# Leftover capture files
+data)
+length)
